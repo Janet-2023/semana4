@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
 
+    <header
+  
     <img src="imagenes/imagen1.png">
     <h1 class="codigo">codiGO</h1>
 
-    <div class="nombre"><h2>Hola, mi nombre es Sebastian Yabiku</h2></div>
-
-    <div>
-        <h1>Sobre mi</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <div class="nombre"><h2>Hola, mi nombre <br>es Sebastian Yabiku</h2></div> >
+    
+    <div class="sobremi">
+        <h1 class="sobre">Sobre mi</h1>
+        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
          Quis diam commodo, arcu gravida erat quam donec convallis. 
          Gravida arcu, suspendisse semper mauris tristique tortor. 
          Eu, malesuada elit feugiat laoreet malesuada vitae. 
@@ -31,24 +35,34 @@
          Eu, malesuada elit feugiat laoreet malesuada vitae.
          zz enim habitasse malesuada lacus, euismod pharetra habitasse.</p>
     
-         <input type="button" value="Ver CV">
+        
+         <button class="ver">Ver CV</button>
         </div>
 
-        <div class="mis">
+        <div class="skills">
             <h1>Mis Skills</h1>
 
-            <h2>HTML</h2>
-            <progress max="100" value="80"></progress>
+    <div class="progress">
+              <label>HTML</label>
+                <progress max="100" value="80"></progress>
+    
+                <label>Javascript</label>
+                <progress max="100" value="45"></progress>
+    
+                <label>CSS</label>
+                <progress max="100" value="20"></progress>
+    
+                <label>Vue</label>
+                <progress max="100" value="85"></progress>
+               
+                <label>Flexbox</label>
+                <progress max="100" value="90"></progress>
 
-            <h2>Javascript</h2>
-            <progress max="100" value="45"></progress>
-
-            <h2>CSS</h2>
-            <progress max="100" value="20"></progress>
-
-            <h2>Vue</h2>
-            <progress max="100" value="85"></progress>
-
+                <label>CSS Grid</label>
+                <progress max="100" value="40"></progress>
+            
+</div>
+          
         </div>
 
         <div class="portafolio">
@@ -61,37 +75,25 @@
             <img src="imagenes/imagen3.png">
         </div>
 
-        <div class="clientes">
-            <h1>Contacto</h1>
-            <p>
-                <label for="name" class="colocar_name">Nombre
-                </label>
-                  <input type="text" name="escribir_name" id="name" Placeholder="Nombre" pattern="[A-Za-z]+">
-              </p>
-              <p>
-                <label for="lasname" class="colocar_lasname">Apellido
-                </label>
-                  <input type="text" name="escribir_name" id="name" required="obligatorio" placeholder="Apellido" pattern="[A-Za-z]+">
-              </p>
-  <p>
-            <label id="telefono" class="colocar_telefono" >Teléfono
-                <samp class="obigatorio">*</samp></label>
-                <input type="tel" name="introducir_telefono" id="telefono" required="obigatorio" placeholder="Escribe tu teléfono">
-        </p>
-              <p>
-                <label for="email" class="colocar_email">Email
-                </label>
-                  <input type="email" name="escribir_email" id="email" pattern=".@gmail.com" placeholder="Email" required>
-              
-                </p>
-                <textarea type="text" class="introducir_mensaje" id="mensaje" required="obigatorio" placeholder="Deja aqui tu comentario..."></textarea>
-            </label>
+        <div class="contacto">
 
-                <button>Enviar</button>
-                
+            <h1 class="contatext">Contacto</h1>
+       
+           
+        <input type="text" name="introducir_name" id="name" placeholder="Nombre">
+        <input type="text" name="introducir_apellido" id="apellido" placeholder="Apellido">            
+        <input type="email" name="introducir_email" id="email" placeholder="Email">
+        <input type="tel" name="introducir_telefono" id="telefono" placeholder="telefono">
 
 
-        </div>
+     
+        <textarea type="text" name="introducir_descripcion" id="descripcion" placeholder="Descripcion"></textarea>
+       
+        <input type="submit" value="ENVIAR">
+
+    </div>
+
+   
 
     
 </body>
