@@ -41,7 +41,7 @@ body{
 
     }
     .sobre{
-        color: blue;
+        color: #1D06A7        ;
         text-align: center;
         font-size: 36px;
         line-height: 100px;
@@ -69,30 +69,40 @@ button{
 .skills{
 background-color: #9022FF;
 color: #26CC4B;
-height: 500px;
+height: 450px;
 text-align: center;
 padding-top: 25px;
 
 }
-
 label{
 color: white;
-margin: 15px ;
-text-align: c;
+font-size: 18px;
+margin: 10px;
+margin-left: 2px;
 
 }
-progress{
-border-radius: 2rem;
-height: 25px;
-padding:1px;
-    width: 320px;
-    border: solid;
-    margin: 25px 30px;
-    border: 1px solid #57EFF9;
+.progress{
+    height: 400px;
+    margin-left: 2px;
+    }
 
+.barra{
+    width: 330px;
+    height: 25px;
+    border-radius: 30px;
+    border-style: 10px solid;
+    margin: 25px;
+    margin-left: 35px;
+}
+.barra::-webkit-progress-bar{
+    background:white;
+    border-radius: 15px;
 
 }
-
+.barra::-webkit-progress-value{
+    background:#57EFF9;
+    border-radius: 10px;
+}
 
 .portafolio{
 background-color: #FFD233;
